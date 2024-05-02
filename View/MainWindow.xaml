@@ -1,0 +1,30 @@
+﻿<Window x:Class="С_6_Calendar.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:С_6_Calendar"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition Height="5*"/>
+        </Grid.RowDefinitions>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition Width="6*"/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Button x:Name="z" Content="Назад"/>
+            <Button x:Name="y" Grid.Column="2" Content="Вперед"/>
+            <Label x:Name="info" Grid.Column="1" Content="инфа"/>
+        </Grid>
+        <Grid Grid.Row="1">
+            <WrapPanel x:Name="AllWrapPanel">
+                
+            </WrapPanel>
+        </Grid>
+    </Grid>
+</Window>
