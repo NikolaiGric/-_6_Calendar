@@ -1,0 +1,21 @@
+﻿<UserControl x:Class="С_6_Calendar.View.USA"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:С_6_Calendar.View"
+             mc:Ignorable="d" 
+             d:DesignHeight="150" d:DesignWidth="150">
+    <Grid Margin="10">
+        <Button>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="3*"/>
+                    <RowDefinition Height="7*"/>
+                </Grid.RowDefinitions>
+                <Label VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="20" Foreground="Black" Content="{Binding date}"></Label>
+                <Image MaxHeight="50" MaxWidth="50" Grid.Row="1" Source="https://image1.thematicnews.com/uploads/topics/preview/00/23/64/30/f23f8d60d0.jpg"></Image>
+            </Grid>
+        </Button>
+    </Grid>
+</UserControl>

@@ -17,8 +17,8 @@
                 <ColumnDefinition Width="6*"/>
                 <ColumnDefinition/>
             </Grid.ColumnDefinitions>
-            <Button x:Name="z" Content="Назад"/>
-            <Button x:Name="y" Grid.Column="2" Content="Вперед"/>
+            <Button x:Name="z" Content="Назад" Click="z_Click"/>
+            <Button x:Name="y" Grid.Column="2" Content="Вперед" Click="y_Click"/>
             <Label x:Name="info" Grid.Column="1" Content="инфа"/>
         </Grid>
         <Grid Grid.Row="1">
